@@ -21,4 +21,18 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Migrating project from github to gitlab
+
+* creating a file database.yml
+
+* bundle
+
+* yarn
+
+* rake db:create db:migrate
+
+* rake create:users
+
+* rake db:drop db:create db:migrate create:users
+
+* rails s
