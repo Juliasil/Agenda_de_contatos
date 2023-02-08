@@ -36,3 +36,5 @@ Things you may want to cover:
 * rake db:drop db:create db:migrate create:users
 
 * rails s
+
+* teste de criação de nova branch
