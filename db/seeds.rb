@@ -1,7 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+puts 'Cadastrando lista de tipos do  contatos'
+kinds = ['Amigo', 'Conhecido', 'Colega', 'Familiar','Outro']
+kinds.each do |kind|
+  Kind.find_or_create_by(
+    description: kind.to_s
+  )
+end
+puts 'Lista de tipos de contatos cadastrada com sucesso!'
