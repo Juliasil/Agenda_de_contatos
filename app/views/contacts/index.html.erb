@@ -1,4 +1,33 @@
-<% @contacts.each do |contact| %>
-  <p><%= contact.name %></p>
-<% end %>
+<%= link_to 'Cadastra novo contato', new_contact_path %>
+<div>
+  <table>
 
+    <thead>
+        <tr>
+              <th>#</th>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Observação</th>
+              <th>Tipo</th>
+              <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @contacts.each do |contact| %>
+      <tr> 
+        <td><%= contact.id %></td>
+        <td><%= contact.name %></td>
+        <td><%= contact.email%></td>
+        <td><%= contact.rmk%></td>
+        <td><%=  contact.kind.description%></td>
+        <td>
+          <%= link_to 'Editar', edit_contact_path(contact) %>
+          <%= link_to 'Visualizar',  contact_path(contact)  %>
+          <%=button_to 'Apagar',  contact_path(contact), method: :delete, form:{ data: {turbo_confim:"Tem certeza que deseja apagar o contato: #{contact.name}"}} %>
+        </td>
+
+      </tr>
+       <% end %>
+    </tbody>
+  </table>
+</div>
