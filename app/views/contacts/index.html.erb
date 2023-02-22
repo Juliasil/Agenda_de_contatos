@@ -23,7 +23,7 @@
         <td>
           <%= link_to 'Editar', edit_contact_path(contact) %>
           <%= link_to 'Visualizar',  contact_path(contact)  %>
-          <%=button_to 'Apagar',  contact_path(contact), method: :delete, form:{ data: {turbo_confim:"Tem certeza que deseja apagar o contato: #{contact.name}"}} %>
+          <%=link_to 'Apagar',  contact_path(contact), method: :delete,  data: {confirm:"Tem certeza que deseja apagar o contato: #{contact.name}"} %>
         </td>
 
       </tr>

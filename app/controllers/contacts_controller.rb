@@ -41,6 +41,9 @@ class ContactsController < ApplicationController
     @contact = Contact.find(params[:id])
   end
   def params_contact 
-    params.require(:contact).permit(:name, :email, :rmk, :kind_id)
+    params.require(:contact).permit(
+      :name, :email, :rmk, :kind_id,
+      phones_attributes: %i[id number _destroy]
+      )
   end
 end
