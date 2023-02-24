@@ -19,15 +19,30 @@
       <%= f.label 'Tipo de contato' %>
       <%= f.collection_select :kind_id, options_for_kind, :id, :description ,{},{class: 'form-control'}%>
     </div>
-    <fieldset>
 
-      <legend id='phone'>Telefone</legend>
+    <hr class="hr">
+
+    <fieldset>
+     <legend id='phone'>Telefone</legend>
       <%= link_to_add_association 'Adicionar telefone', f, :phones, class: 'btn btn-primary', 'data-association-insertion-node':'#phone', 'data-association-insertion-method':'append'%>
 
       <%= f.fields_for :phones do |phone| %>
         <%= render partial:'phone_fields', locals: {f: phone}%>
       <% end %>
     </fieldset>
+
+    <hr class="hr">
+    
+     <fieldset>
+     <legend id='address'>Endereço</legend>
+      <%= link_to_add_association 'Adicionar Endereço', f, :addresses, class: 'btn btn-primary', 'data-association-insertion-node':'#address', 'data-association-insertion-method':'append'%>
+
+      <%= f.fields_for :addresses do |address| %>
+        <%= render partial:'address_fields', locals: {f: address}%>
+      <% end %>
+    </fieldset>
+
+    <hr class="hr">
     
     <div class='form-group'>
       <button type='submit' class='btn btn-success'>Salvar</button>

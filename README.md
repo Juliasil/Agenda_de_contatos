@@ -1,40 +1,36 @@
-# README
+# Agenda de Contatos
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Projeto da agenda de contatos desenvolvido com a finalidade de estudos do rails 6.**
 
-Things you may want to cover:
+## Pré-requisitos
 
-* Ruby version
+ > Ruby 3.0.0
 
-* System dependencies
+ > Rails 6.0.5
 
-* Configuration
+ ## Instalação
 
-* Database creation
+ Faça o clone do projeto:
 
-* Database initialization
+ ```git clone https://github.com/Juliasil/Agenda_de_contatos.git```
 
-* How to run the test suite
+ Crie o arquivo de configuração para o banco de dados:
 
-* Services (job queues, cache servers, search engines, etc.)
+ ```config/database.yml```
 
-* Deployment instructions
+ No terminal execute:
 
-* Migrating project from github to gitlab
+ 1. ```bundle```
+ 2. ```rake db:create db:migrate db:seed```
+ 3. ```rails s```
 
-* creating a file database.yml
+Via navegador acesse:
 
-* bundle
+```http://localhost:3000```
 
-* yarn
+## Recortes de telas
 
-* rake db:create db:migrate
+|Tela inicial|
 
-* rake create:users
 
-* rake db:drop db:create db:migrate create:users
 
-* rails s
-
-* teste de criação de nova branch

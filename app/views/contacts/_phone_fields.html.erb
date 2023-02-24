@@ -1,6 +1,9 @@
 <div class='nested-fields'>
   <div class='form-group'>
-    <%= f.label 'Telefone' %>
     <%= f.text_field :phone, class: 'form-control' %>
+  </div>
+
+  <div class='form-group'>
+    <%= link_to_remove_association 'Remover telefone', f, class: 'btn btn-outline-danger' %>
   </div>
 </div>

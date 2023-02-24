@@ -1,0 +1,16 @@
+<div class='nested-fields'>
+  <div class='form-group'>
+   <%= f.label 'Rua' %>
+    <%= f.text_field :street, class: 'form-control' %>
+
+    <label>Cidade</label>
+    <%= f.text_field :city, class: 'form-control' %>
+
+    <label>Estado</label>
+    <%= f.text_field :state, class: 'form-control' %>
+  </div>
+
+  <div class='form-group'>
+    <%= link_to_remove_association 'Remover endereço', f, class: 'btn btn-outline-danger'%>
+  </div>
+</div>

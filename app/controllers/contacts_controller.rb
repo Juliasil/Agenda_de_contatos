@@ -6,6 +6,8 @@ class ContactsController < ApplicationController
 
   def new
     @contact = Contact.new
+    @contact.phones.build
+    @contact.addresses.build
   end
   def create
     @contact = Contact.new(params_contact)
@@ -43,7 +45,8 @@ class ContactsController < ApplicationController
   def params_contact 
     params.require(:contact).permit(
       :name, :email, :rmk, :kind_id,
-      phones_attributes: %i[id number _destroy]
+      phones_attributes: %i[id phone _destroy],
+      addresses_attributes: %i[id street city state _destroy]
       )
   end
 end
