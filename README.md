@@ -31,6 +31,8 @@ Via navegador acesse:
 ## Recortes de telas
 
 |Tela inicial|
-
+|:-------|
+|![Captura de tela de 2023-02-24 15-25-14](https://user-images.githubusercontent.com/85976415/221266075-9894473b-8cc5-4faf-ab21-81472aaebe8c.png)
+|
 
 
