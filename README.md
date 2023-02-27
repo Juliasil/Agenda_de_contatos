@@ -28,6 +28,8 @@ Via navegador acesse:
 
 ```http://localhost:3000```
 
+Use os dados de acesso do usuário contidos no seed
+
 ## Recortes de telas
 
 |Tela inicial|

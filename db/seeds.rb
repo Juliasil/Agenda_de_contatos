@@ -6,3 +6,11 @@ kinds.each do |kind|
   )
 end
 puts 'Lista de tipos de contatos cadastrada com sucesso!'
+
+puts 'Cadastrando usuário padrão.'
+Admin.create!(
+  email: 'admin@admin.com.br',
+  password: '123456',
+  password_confimation: '123456'
+)
+puts ' Usuário padrão cadastrado com sucesso.'

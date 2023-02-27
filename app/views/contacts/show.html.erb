@@ -1,6 +1,18 @@
-<div>
-  <h1><%=@contact.name%></h1>
-  <p><%=@contact.email%></p>
-  <p><%=@contact.rmk%></p>
-  <p><%=@contact.kind.description%></p>
+<div class="card" style="width: 30%;">
+  <div class="card-body">
+    <h5 class="card-title"><%=@contact.name%></h5>
+    <h6 class="card-subtitle mb-2 text-muted">Telefones</h6>
+    <ul>
+      <% @contact.phones.each do |ph| %>
+        <li class="card-text"><%= ph.phone%></li>
+      <% end %>
+    </ul>
+
+    <% @contact.addresses.each do |ad| %>
+      <p class="card-text">Rua: <%= ad.street %>, <%= ad.city %>, <%= ad.state %></p>
+    <% end %>
+  
+     <%= link_to 'Editar', edit_contact_path(@contact), class: "card-link"%>
+     <%= link_to 'Voltar', contacts_path, class: "card-link"  %>
+  </div>
 </div>
