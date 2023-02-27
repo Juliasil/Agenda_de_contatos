@@ -32,9 +32,18 @@ Use os dados de acesso do usuário contidos no seed
 
 ## Recortes de telas
 
-|Tela inicial|
-|:-------|
-|![Captura de tela de 2023-02-24 15-25-14](https://user-images.githubusercontent.com/85976415/221266075-9894473b-8cc5-4faf-ab21-81472aaebe8c.png)
+|Tela de autenticação|
+|:------|
+|![image](https://user-images.githubusercontent.com/85976415/221646837-e4e15083-9784-4051-b27e-25b89feab970.png)
 |
 
 
+|Tela inicial|
+|:-------|
+|![image](https://user-images.githubusercontent.com/85976415/221645912-73a47fa4-89f4-499b-986a-54119d8f139f.png)
+|
+
+|Visualização do contato|
+|:-------|
+|![image](https://user-images.githubusercontent.com/85976415/221646670-21dc1aee-a896-4e03-82f8-e830865c2788.png)
+|
